@@ -1,0 +1,14 @@
+body{
+    background: #292929;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: whitesmoke;
+}
+section{
+    display: grid;
+}
+button{
+    width: fit-content;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PHP Sign</title>
+</head>
+<body>
+    <section class="content">
+        <div>
+            <h2>Sign<span>Up</span></h2>
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="su-name" placeholder="Name">
+            </div>
+            <div>
+                <label for="contact">Contact : </label>
+                <input type="tel" name="contact" id="su-contact" placeholder="Contact">
+            </div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="su-email" placeholder="Email">
+            </div>
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="su-password" placeholder="Password">
+            </div>
+            <div>
+                <label for="re_passowrd">Confirm Password : </label>
+                <input type="password" name="re_password" id="su-re_password" placeholder="Confirm Password">
+            </div>
+            <button type="submit" onclick="signup()">Signup</button>
+            <p>already registered? then <a href="./index.html">SignIn</a></p>
+        </div>
+    </section>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

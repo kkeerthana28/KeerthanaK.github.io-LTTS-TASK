@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PHP Sign</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body onload="signed_in()">
+    <section class="content">
+        <div>
+            <h2>Sign<span>In</span></h2>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="si-email" placeholder="Email">
+            </div>
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="si-password" placeholder="Password">
+            </div>
+            <button type="submit" onclick="signin()">SignIn</button>
+            <p>Forgot password <button onclick="is_user(document.getElementById('si-email').value)">Login by Verification link</button></p>
+            <p>New user? then <a href="./signup.html">SignUp</a></p>
+        </div>
+    </section>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

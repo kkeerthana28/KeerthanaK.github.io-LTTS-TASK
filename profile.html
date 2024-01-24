@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PHP Sign</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+</head>
+<body onload="fetch_profile()">
+    <h1>Profile</h1>
+    <button onclick="signout()">SignOut</button>
+    <h1 id="welcome"></h1>
+    <section>
+        <div>
+            <div>
+                <label for="name">Username : </label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div>
+                <label for="name">Contact : </label>
+                <input type="tel" name="contact" id="contact" placeholder="Contact">
+            </div>
+            <div style="display: flex;">
+                <label for="name">Email : </label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <span id="verified">Verified</span>
+                <button id="verify" onclick="verifyEmail(document.getElementById('email').value)">Verify</button>
+            </div>
+            <div>
+                <label for="name">Password : </label>
+                <input type="text" name="password" id="password" placeholder="Password">
+            </div>
+            <button type="submit" onclick="update()">Update</button>
+        </div>
+    </section>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
